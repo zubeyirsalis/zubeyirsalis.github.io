@@ -1,0 +1,15 @@
+title: Zubeyir Salis
+description: Research in rheumatology, artificial intelligence and health data at the University of Montpellier.
+markdown: kramdown
+kramdown:
+  input: GFM
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

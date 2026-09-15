@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | Zubeyir Salis</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="theme-color" content="#135b62">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body class="{{ page.section }}">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Zubeyir <strong>Salis</strong></a>
+      <nav aria-label="Main navigation">
+        <a class="nav-about" href="index.html">About</a>
+        <a class="nav-research" href="research.html">Research</a>
+        <a class="nav-publications" href="publications.html">Publications</a>
+        <a class="nav-teaching" href="teaching.html">Teaching &amp; supervision</a>
+        <a class="nav-contact" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="page-content">{{ content }}</main>
+  <footer class="site-footer">
+    <span>Zubeyir Salis · University of Montpellier</span>
+    <a href="https://orcid.org/0000-0003-2982-4591">ORCID</a>
+  </footer>
+  <script>
+    const active = document.querySelector('.nav-' + document.body.className);
+    if (active) active.setAttribute('aria-current', 'page');
+  </script>
+</body>
+</html>
